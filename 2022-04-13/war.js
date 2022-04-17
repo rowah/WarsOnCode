@@ -16,6 +16,9 @@ function squareOrSquareRoot(array) {
   } else {
     result.push((i)**2)
   }
-  } )
+  })
     return result;  
   }
+
+
+  //const squareOrSquareRoot = array => array.map(a => Math.sqrt(a) % 1 == 0 ? Math.sqrt(a) : (a * a));
