@@ -50,3 +50,24 @@ function filter_list(l) {
   // Return a new array with the strings filtered out
   return l.filter(item => typeof item === 'number');
 }
+
+
+
+//Complete the function which converts a binary number (given as a string) to a decimal number.
+
+const binToDec = bin => parseInt(bin,2);
+
+
+function binToDec(bin){
+  let arr = bin.split('').reverse();
+   let num = 0;    
+
+   for (let i = 0; i<arr.length; i++){
+       if(arr[i]==='1' || arr[i]==='0'){
+           num+=arr[i]*Math.pow(2,i);
+       }else{
+           throw 'Not bin num'
+       }
+   }
+   return num;
+}
