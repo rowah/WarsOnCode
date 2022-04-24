@@ -57,7 +57,7 @@ function filter_list(l) {
 
 const binToDec = bin => parseInt(bin,2);
 
-
+//OR
 function binToDec(bin){
   let arr = bin.split('').reverse();
    let num = 0;    
@@ -70,4 +70,39 @@ function binToDec(bin){
        }
    }
    return num;
+}
+
+
+//Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+//Examples:
+
+//solution('abc', 'bc') // returns true
+//solution('abc', 'd') // returns false
+
+function solution (str, ending) {
+  return str.endsWith(ending)
+}
+
+
+
+//25/04/2022
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+//For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+//Note: The function accepts an integer and returns an integer
+
+function squareDigits(num){
+  let numString = num + '';
+   let newNum = ''
+   for(i=0; i<numString.length; i++){
+     newNum += Number(numString[i])**2
+ }
+   return Number(newNum)
+ }
+//A better solution than mine using methods
+ function squareDigits(num){
+  return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
+  
 }
