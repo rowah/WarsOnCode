@@ -114,3 +114,20 @@ function digitize(n) {
   var array = String(n).split("").reverse().map(Number);
   return array
 }
+
+
+/////Write a function called repeatStr which repeats the given string string exactly n times.
+function repeatStr (n, s) {
+  let newS = ''
+  for(i=1; i<=n; i++) {
+  newS += s
+    
+} return newS
+}
+//shorter codes using methods
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+//arrow
+repeatStr = (n, s) => s.repeat(n)
+
