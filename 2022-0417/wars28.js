@@ -68,6 +68,6 @@ function countPositivesSumNegatives(input) {
 //Your task is to write a function which returns the time since midnight in milliseconds.
 function past(h, m, s){
     //#Happy Coding! ^_^
-    return ((h * 60 + m + s/60)*60000)
+    return Math.round(((h * 60 + m + s/60)*60000))
     
   }
