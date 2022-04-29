@@ -71,3 +71,37 @@ function past(h, m, s){
     return Math.round(((h * 60 + m + s/60)*60000))
     
   }
+
+//This time no story, no theory. The examples below show you how to write function accum:
+
+//accum("abcd") -> "A-Bb-Ccc-Dddd"
+//accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+//accum("cwAt") -> "C-Ww-Aaa-Tttt"
+function accum(str) {
+    var letters = str.split('');
+    var result = [];
+    for (var i = 0; i < letters.length; i++) {
+      result.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
+    }
+    return result.join('-');
+  }
+
+
+//Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+
+//The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+
+//setAlarm(true, true) -> false
+//setAlarm(false, true) -> false
+//setAlarm(false, false) -> false
+//setAlarm(true, false) -> true
+
+function setAlarm(employed, vacation){
+    if (employed && !vacation) return true
+    else return false
+  
+  }
+//OR
+  function setAlarm(employed, vacation){
+    return (employed && !vacation) ? true : false;
+  }
