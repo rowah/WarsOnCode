@@ -105,3 +105,10 @@ function setAlarm(employed, vacation){
   function setAlarm(employed, vacation){
     return (employed && !vacation) ? true : false;
   }
+
+  //Write a function which calculates the average of the numbers in a given list.
+
+//Note: Empty arrays should return 0.
+function find_average(array) {
+    return (array.length < 1 || array == undefined) ? 0 : ((array.reduce( ( prev, curr) => prev + curr, 0)) /array.length)
+  }
