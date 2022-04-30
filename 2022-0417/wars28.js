@@ -120,3 +120,4 @@ function find_average(array) {
     return Number(area.toFixed(2))
     
   }
+
