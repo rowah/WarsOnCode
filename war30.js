@@ -80,3 +80,13 @@ function friend(friends){
   function find_difference(a, b) {
     return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
   }
+
+ // Implement a function which convert the given boolean value into its string representation.
+ function booleanToString(b){
+    return b.toString();
+  }
+
+  //OR
+  function booleanToString(b){
+    return b ? 'true' : 'false';
+  }
