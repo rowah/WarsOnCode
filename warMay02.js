@@ -91,3 +91,15 @@ return 'WIN'
   }
 //Shorter
 alternateCase = (s) => s.split('').map(x => x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()).join('');
+
+
+//Count the number of divisors of a positive integer n.
+function getDivisorsCnt(n){
+    // todo
+  let numOfDivisors = 0;
+  for(let i=1; i <= n; i++) {
+    if(n % i ==0) {
+      numOfDivisors ++
+}
+} return numOfDivisors
+}
