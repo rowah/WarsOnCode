@@ -75,4 +75,19 @@ return 'WIN'
     return str.split('').reverse().join('').split(' ').reverse().join(' ')
   }
   
-  //Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+
+//Write function alternateCase which switch every letter in string from upper to lower and from lower to upper. E.g: Hello World -> hELLO wORLD
+  function alternateCase(s) {
+    let text = s.split('')
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] === text[i].toLowerCase()) {
+          text[i] = text[i].toUpperCase();
+        } else {
+          text[i] = text[i].toLowerCase();
+        }
+    }
+    return text.join('');
+  }
+//Shorter
+alternateCase = (s) => s.split('').map(x => x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()).join('');
