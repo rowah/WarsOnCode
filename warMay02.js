@@ -153,3 +153,13 @@ function makeNegative(num) {
     return num < 0 ? num : -num;
     // Code?
   }
+
+//Your task is to make two functions (max and min, or maximum and minimum, etc., depending on the language) that receive a list of integers as input and return, respectively, the largest and lowest number in that list.
+  var min = function(list){
+    return list.reduce((a, b) => Math.min(a, b));
+      
+  }
+  
+  var max = function(list){
+    return list.reduce((a, b) => Math.max(a, b));
+  }
