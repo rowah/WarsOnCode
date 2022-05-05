@@ -147,3 +147,9 @@ function numberToString(num) {
     // Return a string of the number here!
     return num.toString()
   }
+
+//In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+function makeNegative(num) {
+    return num < 0 ? num : -num;
+    // Code?
+  }
