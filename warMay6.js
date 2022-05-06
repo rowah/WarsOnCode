@@ -31,3 +31,10 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 }
 
 //OR
+function shark(pDist, sDist, speedMe, speedShark, dolphin){
+    if (dolphin){
+      speedShark /= 2;
+    }
+    
+    return pDist / speedMe < sDist / speedShark ? "Alive!" : "Shark Bait!"
+  }
