@@ -38,3 +38,10 @@ function shark(pDist, sDist, speedMe, speedShark, dolphin){
     
     return pDist / speedMe < sDist / speedShark ? "Alive!" : "Shark Bait!"
   }
+  function shark(pontoonDistance, sharkDistance, yourSpeed, sharkSpeed, dolphin){
+    if (dolphin) sharkSpeed = sharkSpeed/2;
+    let yourTime = pontoonDistance/yourSpeed;
+    let sharksTime = sharkDistance/sharkSpeed;
+    
+    return yourTime < sharksTime ? "Alive!": "Shark Bait!"
+  }
