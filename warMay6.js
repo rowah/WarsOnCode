@@ -19,3 +19,15 @@
 //The pontoon, you, and the shark are all aligned in one dimension.
 
 //If you make it, return "Alive!", if not, return "Shark Bait!".
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    let myTime = pontoonDistance/youSpeed;
+    let sharkTime = sharkDistance/sharkSpeed;
+    if(dolphin === true) {
+        sharkTime *= 2
+    }
+    return myTime > sharkTime ? "Shark Bait!" : "Alive!"
+
+}
+
+//OR
