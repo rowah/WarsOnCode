@@ -12,3 +12,4 @@ function arrayDiff(a, b) {
   } return newArray
     
   }
+  alert('hey')
